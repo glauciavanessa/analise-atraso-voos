@@ -1,59 +1,74 @@
-# ✈️ Análise de Atrasos de Voos em Nova York (2013)
+# ✈️ Análise de Atrasos em Voos - Nova York 2013
 
-Este projeto em R realiza uma análise dos dados de voos a partir dos aeroportos de Nova York no ano de 2013, utilizando a base `nycflights13`. O foco é identificar quais companhias aéreas tiveram os **maiores atrasos médios na decolagem**.
-
----
-
-## 📌 Objetivos
-
-- Explorar a base `flights` da biblioteca `nycflights13`
-- Calcular o atraso médio de cada companhia aérea
-- Visualizar os resultados com um gráfico de barras horizontal
-- Salvar o gráfico como imagem
+Bem-vindo a este projeto de análise de dados dos voos registrados em Nova York em 2013!  
+Aqui usamos R e visualizações para entender melhor os **atrasos nas decolagens por companhia aérea**.
 
 ---
 
-## 📦 Pacotes utilizados
+## 📌 Objetivo
 
-- [`dplyr`](https://dplyr.tidyverse.org/)
-- [`ggplot2`](https://ggplot2.tidyverse.org/)
-- [`nycflights13`](https://cran.r-project.org/web/packages/nycflights13/index.html)
-
----
-
-## 📁 Arquivos do projeto
-
-| Arquivo                    | Descrição                                  |
-|---------------------------|---------------------------------------------|
-| `analise_atrasos_voos.R`  | Script principal em R com toda a análise    |
-| `grafico_atrasos.png`     | Gráfico de barras gerado com ggplot2        |
-| `README.md`               | Documentação do projeto                     |
+> ✈️ **Descobrir quais companhias aéreas tiveram maior média de atraso em 2013.**  
+> 💡 Utilizamos dados reais do pacote `nycflights13` para explorar, agrupar, calcular médias e visualizar.
 
 ---
 
-## 🧪 Como executar
+## 🔧 Tecnologias Utilizadas
 
-1. Instale os pacotes necessários:
-   ```r
-   install.packages(c("dplyr", "ggplot2", "nycflights13"))
+- **R** (linguagem de programação)
+- **pacotes:** `dplyr`, `ggplot2`, `nycflights13`
+- **Gráfico gerado com:** `ggplot2`
 
-2. Rode o script analise_atrasos_voos.R no RStudio:
-   source("analise_atrasos_voos.R")
+---
 
-3. O gráfico será salvo automaticamente como grafico_atrasos.png.
+## 🛫 Etapas da Análise
+
+1. Importação dos dados (`flights`)
+2. Limpeza e agrupamento por companhia (`carrier`)
+3. Cálculo da média de atraso
+4. Visualização em gráfico de barras
+
+---
+
+## 📊 Resultado Visual
+
+## Gráfico de Atrasos por Companhia Aérea
+
+<p align="center">
+  <img src="grafico_atrasos.png" alt="Gráfico de atrasos por companhia" width="600"/>
+</p>
 
 
-📚 Fonte dos dados
+---
 
-Os dados são disponibilizados pelo pacote nycflights13, que contém registros públicos da FAA sobre voos nos EUA em 2013.
+## 🗂️ Estrutura do Projeto
 
-👩‍💻 Autor(a)
+```
+analise-atrasos-voos/
+├── analise_atrasos_voos.R       # Script com toda a análise no R
+├── grafico_atrasos.png          # Imagem gerada pelo ggplot2
+├── README.md                    # Documentação do projeto
+```
 
-Projeto desenvolvido por Glaucia.
-Sinta-se à vontade para adaptar e usar em seus estudos ou portfólio.
+---
 
-📜 Licença
+## 🌐 Fonte dos Dados
 
-Este projeto está sob a licença MIT.
+Os dados fazem parte do pacote [`nycflights13`](https://cran.r-project.org/web/packages/nycflights13/index.html), que contém todos os voos que partiram de NYC em 2013.
 
+---
 
+## 🚀 Como Executar o Projeto
+
+1. Clone este repositório:
+```bash
+git clone https://github.com/glauciavanessa/analise-atraso-voos.git
+```
+2. Abra o script `analise_atrasos_voos.R` no RStudio
+3. Execute as linhas do script para gerar o gráfico
+
+---
+
+## 📬 Contato
+
+Caso queira trocar ideias, me chame por aqui mesmo no GitHub!  
+Feito com 💙 por Gláucia Vanessa.
